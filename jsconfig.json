@@ -1,0 +1,26 @@
+/* vscode路径提示配置 */
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "@p/*": [
+                "src/page/*"
+            ],
+           /*  "/lib": [
+                "lib/*"
+            ], */
+        }
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
