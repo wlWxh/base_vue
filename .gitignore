@@ -24,6 +24,7 @@ node_modules/.vite/*
 *.sln
 *.sw?
 
-config/config.js
+#config/config.js
 
 .history/*
+node_modules/*

@@ -46,7 +46,7 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
     });
     const textBaseline = vue.computed(() => {
       var _a, _b;
-      return (_b = (_a = props.font) == null ? void 0 : _a.textBaseline) != null ? _b : "top";
+      return (_b = (_a = props.font) == null ? void 0 : _a.textBaseline) != null ? _b : "hanging";
     });
     const gapX = vue.computed(() => props.gap[0]);
     const gapY = vue.computed(() => props.gap[1]);

@@ -47,9 +47,7 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
         tabSize = $el[`client${strings.capitalize(sizeName)}`];
         const tabStyles = window.getComputedStyle($el);
         if (sizeName === "width") {
-          if (props.tabs.length > 1) {
-            tabSize -= Number.parseFloat(tabStyles.paddingLeft) + Number.parseFloat(tabStyles.paddingRight);
-          }
+          tabSize -= Number.parseFloat(tabStyles.paddingLeft) + Number.parseFloat(tabStyles.paddingRight);
           offset += Number.parseFloat(tabStyles.paddingLeft);
         }
         return false;

@@ -42,7 +42,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     });
     const textBaseline = computed(() => {
       var _a, _b;
-      return (_b = (_a = props.font) == null ? void 0 : _a.textBaseline) != null ? _b : "top";
+      return (_b = (_a = props.font) == null ? void 0 : _a.textBaseline) != null ? _b : "hanging";
     });
     const gapX = computed(() => props.gap[0]);
     const gapY = computed(() => props.gap[1]);

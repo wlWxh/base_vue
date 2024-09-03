@@ -104,7 +104,7 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
       try {
         const result = await doValidateField(modelProps);
         if (result === true) {
-          callback == null ? void 0 : callback(result);
+          await (callback == null ? void 0 : callback(result));
         }
         return result;
       } catch (e) {
@@ -114,7 +114,7 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
         if (props.scrollToError) {
           scrollToField(Object.keys(invalidFields)[0]);
         }
-        callback == null ? void 0 : callback(false, invalidFields);
+        await (callback == null ? void 0 : callback(false, invalidFields));
         return shouldThrow && Promise.reject(invalidFields);
       }
     };
@@ -146,7 +146,8 @@ const _sfc_main = /* @__PURE__ */ vue.defineComponent({
       validateField,
       resetFields,
       clearValidate,
-      scrollToField
+      scrollToField,
+      fields
     });
     return (_ctx, _cache) => {
       return vue.openBlock(), vue.createElementBlock("form", {

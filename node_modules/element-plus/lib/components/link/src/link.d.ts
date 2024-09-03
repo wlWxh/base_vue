@@ -3,7 +3,7 @@ import type Link from './link.vue';
 export declare const linkProps: {
     readonly type: import("element-plus/es/utils").EpPropFinalized<StringConstructor, "default" | "success" | "warning" | "info" | "primary" | "danger", unknown, "default", boolean>;
     readonly underline: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, true, boolean>;
-    readonly disabled: import("element-plus/es/utils").EpPropFinalized<BooleanConstructor, unknown, unknown, false, boolean>;
+    readonly disabled: BooleanConstructor;
     readonly href: import("element-plus/es/utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;
     readonly target: import("element-plus/es/utils").EpPropFinalized<(new (...args: any[]) => string & {}) | (() => string) | ((new (...args: any[]) => string & {}) | (() => string))[], unknown, unknown, "_self", boolean>;
     readonly icon: {

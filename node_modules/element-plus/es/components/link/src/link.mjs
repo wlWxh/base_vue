@@ -12,7 +12,7 @@ const linkProps = buildProps({
     type: Boolean,
     default: true
   },
-  disabled: { type: Boolean, default: false },
+  disabled: Boolean,
   href: { type: String, default: "" },
   target: {
     type: String,

@@ -5,10 +5,7 @@ import { isBoolean } from '../../../utils/types.mjs';
 import { CHANGE_EVENT } from '../../../constants/event.mjs';
 
 const checkTagProps = buildProps({
-  checked: {
-    type: Boolean,
-    default: false
-  },
+  checked: Boolean,
   type: {
     type: String,
     values: ["primary", "success", "info", "warning", "danger"],

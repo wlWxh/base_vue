@@ -30,7 +30,9 @@ export default {
     mounted() { },
     methods: {
         test() {
-            this.openRouter('admin1')
+            this.openRouter('test/1111')
+            let t = new Date()
+            
         }
     },
 }

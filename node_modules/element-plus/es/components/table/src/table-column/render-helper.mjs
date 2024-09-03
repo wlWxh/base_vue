@@ -91,6 +91,11 @@ function useRender(props, slots, owner) {
         return renderSlot(slots, "header", scope, () => [column.label]);
       };
     }
+    if (slots["filter-icon"]) {
+      column.renderFilterIcon = (scope) => {
+        return renderSlot(slots, "filter-icon", scope);
+      };
+    }
     let originRenderCell = column.renderCell;
     if (column.type === "expand") {
       column.renderCell = (data) => h("div", {

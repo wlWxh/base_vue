@@ -23,18 +23,12 @@ const uploadBaseProps = buildProps({
     type: definePropType([Object, Function, Promise]),
     default: () => mutable({})
   },
-  multiple: {
-    type: Boolean,
-    default: false
-  },
+  multiple: Boolean,
   name: {
     type: String,
     default: "file"
   },
-  drag: {
-    type: Boolean,
-    default: false
-  },
+  drag: Boolean,
   withCredentials: Boolean,
   showFileList: {
     type: Boolean,

@@ -171,7 +171,11 @@ const useFloating = (referenceRef, contentRef, arrowRef, placement, strategy, of
   });
   let cleanup;
   vue.onMounted(() => {
-    cleanup = dom.autoUpdate(vue.unref(referenceRef), vue.unref(contentRef), update);
+    const referenceEl = vue.unref(referenceRef);
+    const contentEl = vue.unref(contentRef);
+    if (referenceEl && contentEl) {
+      cleanup = dom.autoUpdate(referenceEl, contentEl, update);
+    }
     vue.watchEffect(() => {
       update();
     });

@@ -13,8 +13,8 @@ function useAllowCreate(props, states) {
     return props.allowCreate && props.filterable;
   });
   function hasExistingOption(query) {
-    const hasValue = (option) => getValue(option) === query;
-    return props.options && props.options.some(hasValue) || states.createdOptions.some(hasValue);
+    const hasOption = (option) => getLabel(option) === query;
+    return props.options && props.options.some(hasOption) || states.createdOptions.some(hasOption);
   }
   function selectNewOption(option) {
     if (!enableAllowCreateMode.value) {

@@ -1,9 +1,10 @@
+// @ts-nocheck
 /*
  * @Author: wlWxh
  * @Date: 2023-11-09 13:44:30
  * @LastEditors: wlWxh
- * @LastEditTime: 2024-03-06 16:10:50
- * @FilePath: \sy-vue\router\router.js
+ * @LastEditTime: 2024-08-30 15:59:25
+ * @FilePath: \wp\vue_ui\router\router.js
  * @Description: 路由器基础配置，创建了路由器并配置了路由拦截器，由cookie配合完成状态管理
  */
 import { createRouter, createWebHistory, useRoute } from "vue-router"

@@ -95,6 +95,11 @@ function useRender(props, slots, owner) {
         return vue.renderSlot(slots, "header", scope, () => [column.label]);
       };
     }
+    if (slots["filter-icon"]) {
+      column.renderFilterIcon = (scope) => {
+        return vue.renderSlot(slots, "filter-icon", scope);
+      };
+    }
     let originRenderCell = column.renderCell;
     if (column.type === "expand") {
       column.renderCell = (data) => vue.h("div", {

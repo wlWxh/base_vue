@@ -72,7 +72,7 @@ declare type Path<T> = T extends ReadonlyArray<infer V> ? IsTuple<T> extends tru
 declare type FieldPath<T> = T extends object ? Path<T> : never;
 export declare type FormRules<T extends MaybeRef<Record<string, any> | string> = string> = Partial<Record<UnwrapRef<T> extends string ? UnwrapRef<T> : FieldPath<UnwrapRef<T>>, Arrayable<FormItemRule>>>;
 export declare type FormValidationResult = Promise<boolean>;
-export declare type FormValidateCallback = (isValid: boolean, invalidFields?: ValidateFieldsError) => void;
+export declare type FormValidateCallback = (isValid: boolean, invalidFields?: ValidateFieldsError) => Promise<void> | void;
 export interface FormValidateFailure {
     errors: ValidateError[] | null;
     fields: ValidateFieldsError;

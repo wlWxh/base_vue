@@ -1,26 +1,26 @@
 {
-  "name": "sy-vue",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "r": "vite --host",
-    "b": "vite build",
-    "p": "vite preview"
-  },
-  "dependencies": {
-    "@element-plus/icons-vue": "^2.3.1",
-    "axios": "^1.6.7",
-    "element-plus": "^2.5.5",
-    "vue": "^3.3.11",
-    "vue-cookies": "^1.8.3",
-    "vue-qr": "^4.0.9",
-    "vue-router": "^4.2.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
-    "unplugin-auto-import": "^0.17.5",
-    "unplugin-vue-components": "^0.26.0",
-    "vite": "^5.0.8"
-  }
+    "name": "wp_vue_ui",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "r": "vite --host",
+        "b": "vite build",
+        "p": "vite preview"
+    },
+    "dependencies": {
+        "@element-plus/icons-vue": "^2.3.1",
+        "axios": "^1.6.7",
+        "element-plus": "^2.5.5",
+        "vue": "^3.3.11",
+        "vue-cookies": "^1.8.3",
+        "vue-qr": "^4.0.9",
+        "vue-router": "^4.2.5"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.5.2",
+        "unplugin-auto-import": "^0.17.5",
+        "unplugin-vue-components": "^0.26.0",
+        "vite": "^5.0.8"
+    }
 }

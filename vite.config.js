@@ -29,6 +29,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@p': path.resolve(__dirname, 'src/page'),
+      '@r': path.resolve(__dirname, '/'),
     },
   },
   server: {

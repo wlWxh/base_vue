@@ -100,7 +100,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       try {
         const result = await doValidateField(modelProps);
         if (result === true) {
-          callback == null ? void 0 : callback(result);
+          await (callback == null ? void 0 : callback(result));
         }
         return result;
       } catch (e) {
@@ -110,7 +110,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         if (props.scrollToError) {
           scrollToField(Object.keys(invalidFields)[0]);
         }
-        callback == null ? void 0 : callback(false, invalidFields);
+        await (callback == null ? void 0 : callback(false, invalidFields));
         return shouldThrow && Promise.reject(invalidFields);
       }
     };
@@ -142,7 +142,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       validateField,
       resetFields,
       clearValidate,
-      scrollToField
+      scrollToField,
+      fields
     });
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("form", {
